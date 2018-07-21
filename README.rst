@@ -7,16 +7,20 @@ DB Logger is a simple Django app to save logs to database.
 Quick start
 -----------
 
-1. Add "db_logger" to your INSTALLED_APPS setting like this::
+1. Install::
+
+    pip install db-logger
+
+2. Add "db_logger" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...
         'db_logger',
     ]
 
-2. Run `python manage.py migrate` to create the polls models.
+3. Run `python manage.py migrate` to create the polls models.
 
-3. Add handler and logger to LOGGING setting like this::
+4. Add handler and logger to LOGGING setting like this::
 
     LOGGING = {
         'version': 1,
@@ -47,4 +51,4 @@ Quick start
         }
     }
 
-4. Visit /admin/db_logger/dblogentry/ to check the logs.
+5. Visit /admin/db_logger/dblogentry/ to check the logs.
